@@ -22,7 +22,7 @@
                 @foreach($productChunk as $product)
                     <div class="col-sm-4 col-md-4">
                         <div class="thumbnail">
-                            <img src="{{ asset('images/' . $product->image_path) }}" alt="photo">
+                            <img src="/images/{{ $product->image_path }}" alt="photo">
                             <div class="caption">
                                 <h4 class="title">{{ $product->title }}</h4>
                                 <p class="description">{{ str_limit($product->description, 156) }}</p>

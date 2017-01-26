@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Repositories\OrderRepository;
 use Illuminate\Http\Request;
 
 /**
@@ -17,6 +18,7 @@ class UserController extends Controller
      */
     public function getProfile()
     {
-        return view('user.profile');
+        $orders = OrderRepository::allByUser();
+        return view('user.profile', ['orders' => $orders]);
     }
 }

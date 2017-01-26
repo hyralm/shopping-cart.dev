@@ -11,6 +11,7 @@ const {mix} = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
+    .js('resources/assets/js/shop/checkout.js', 'public/js/shop/checkout.js')
     .copy('node_modules/font-awesome/css/font-awesome.min.css', 'public/css/font-awesome.min.css')
     .copy('node_modules/font-awesome/fonts', 'public/fonts')
     .copy('resources/assets/images', 'public/images')

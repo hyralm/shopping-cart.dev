@@ -10,8 +10,8 @@
 
     <title>@yield('title', config('app.name', 'Shopping Cart'))</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/app.css">
 
     <!-- Scripts -->
     <script>
@@ -29,7 +29,7 @@
     </div>
     @include('partials.footer')
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="/js/app.js"></script>
     @yield('scripts')
 </body>
 </html>
