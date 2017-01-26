@@ -7,3 +7,45 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.thumbnail img {
+  width: 196px;
+  padding-top: 16px
+}
+
+.thumbnail .description {
+  color: #7f7f7f;
+  height: 156px;
+}
+
+.thumbnail .title {
+  height: 40px;
+}
+
+.thumbnail .price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+html, body {
+  height: 100%;
+}
+
+#app {
+  min-height: 100%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 60px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -60px; /* negative value of footer height */
+  height: 60px;
+  clear: both;
+  padding: 16px 24px;
+  background-color: #fff;
+  border-top: 1px solid #d3e0e9;
+}
